@@ -1,0 +1,376 @@
+
+*{
+   
+    width:100%;
+    height: auto;
+    align-items: center;
+    margin-top:0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+   
+   
+}
+
+body{
+    
+    overflow-y:scroll;
+    overflow-x: hidden;
+    
+  
+
+    
+}
+
+.headerline{
+    background-color:rgb(19, 31, 67);
+    color: white;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+}
+nav{
+
+   text-align: center;
+    text-decoration: none;
+    float: right;
+    margin-right: 0 px;
+    margin-top:20px;
+}
+
+li{
+    display: inline;
+    padding:  10px;
+}
+
+
+.min {
+    width: 50%;
+    min-width: 500px;}
+
+
+/* banner*/
+main{
+    width: full;
+    height:800px;
+    position: relative;
+    top: 50px;
+    background-color: black;
+    background-image: url("img/mainbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+ }
+
+/* .banner-text{
+    position: relative;
+    top: 700px;
+    right:100px;
+    color: black;
+    text-align: center;
+    
+
+
+ }*/
+
+
+
+ /*introduction section*/
+
+
+ .maincontent{ 
+    padding-top: 400px;
+    padding-left: 280px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+ }
+
+ .button_banner{
+    
+    width: 150px;
+
+ }
+ 
+
+.introduction{
+ 
+position:relative;
+top:0px;
+left:40px;
+height:400px;
+width: 1400px;
+margin:0;
+padding-left: 40px;
+background-color: black;
+border-radius: 5% 30% 5%;
+ 
+
+
+}
+
+
+.introduction-text{
+    text-align: center;
+    position: relative;
+    top:150px;
+    font-size: 20px;
+    color:#ffffff;
+   
+
+}
+
+
+.buttons_upsection{
+    position:relative;
+    top:250px;
+    left:650px;
+    width:160px;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    font-size: 15px;
+    
+    
+   
+}
+
+.button_first{
+    background-color:#ffffff;
+    color: black;
+}
+
+
+
+/* about section*/
+
+.container{
+background-color: rgb(235, 240, 233);
+border-radius: 5% 30% 5%;
+height: 380px;
+width: auto;
+display: flex;                      
+flex-direction: column;
+justify-content: flex-start;
+flex-wrap: wrap;
+align-items: center;
+background-color: black;
+
+
+
+
+}
+
+/*flipcard*/
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 380px;
+    border-radius: 5% 30% 5%;
+    border: 1px solid #101010;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    position: relative;
+    top: 10px;
+    left:45px;
+    border-radius: 50%;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5% 30% 5%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 50%;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5% 30% 5%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 50%;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 50%;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 50%;
+  }
+
+
+  /* about text*/
+
+  .about-text{
+    position: relative;
+    top:-120px;
+    left:400px;
+    float: right;
+
+  }
+
+
+  /*my skills*/
+
+  .skills-container{
+   
+    width: auto;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   overflow: hidden; 
+   align-items: center;
+   background-color: black;
+   
+  }
+
+  .skills{
+    background-color: #e1e6e8;
+    border-radius: 15%;
+    
+}
+
+
+  
+  .card{
+    width: 120px;
+    height: 100px;
+    background-color: transparent;
+    font-style: italic;
+  }
+ 
+
+
+
+  .s-text{
+    text-align: center;
+    justify-items: center;
+    transition: 0.5s ease-out;
+  }
+
+  h3 {
+    color: hsl(0, 0%, 28%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+  }
+  
+  h3 span {
+    transition: 0.5s ease-out;
+  }
+  h3:hover span:nth-child(1) {
+    margin-right: 5px;
+  }
+  
+  h3:hover span:nth-child(2) {
+    margin-left: 30px;
+  }
+  h3:hover span {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  }
+
+
+
+
+  .space{
+    width:auto;
+    height:250px;
+    background-color: white;
+}
+
+
+.space1{
+    width:auto;
+    height:100px;
+    background-color: white;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 25px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.container-projects{
+    height: 400px;
+    width:100%;
+    background-color:#bbb;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    flex-wrap: nowrap;
+    align-content: space-evenly;
+    margin:0;
+    background-color: black;
+
+
+
+    
+
+}
+.box{
+    height: 100px;
+    width: 20%;
+    background-color: #44107a;
+    padding: 100px;
+    display: flex;
+    align-content: space-around;
+   
+    margin: 15px;
+
+}
+
+
