@@ -20,10 +20,10 @@
     <span class="min">
     <nav>
      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact-me</li>
-        <li>Projets</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="contact.html">Contact-me</a></li>
+        <li><a href="#">Projets</a></li>
      </ul>
     </nav>
     </span>
@@ -33,9 +33,10 @@
 <main>
 
     <div class="maincontent">
-<h1  class="banner-text"> Hi, my <br>name is </h1>
+        <div class="my_avatarimg"></div>
+<h1  class="banner-text"> Hi, <p>&#128075;</p> I am <br>Elena</h1>
 <p>I love working with digital products</p>
-<button class="button_banner">Get in touch</button>
+<button onclick="window.location.href='contact.html'" class="button_banner">Get in touch</button>
 
 </div>
 </main>
@@ -50,10 +51,6 @@
           in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserun</em></h2>
 
-     <div class="buttons_upsection" >
-          <button class="button_first">read more</button>
-          <button class="button_first"> hire me</button>
-        </div>
 </div>
 
 
@@ -62,7 +59,7 @@
  
 <!--about section-->
 
-<div class="container">
+<div class="container" id="open">
     <!--flip cards-->
     
     <div class="flip-card">
@@ -169,14 +166,18 @@
 <div class="box">
     <p> Coding projects</p><br>
     <p>Check more,<span> here.</span></p>
+    <button onclick="window.location.href='check_projects.html'"> Check projects </button>
+   
 </div>
 <div class="box">
     <p> Video and gpraphic projects</p><br>
     <p>Check more,<span> here.</span></p>
+    <button onclick="window.location.href='graphic_projects.html' ">Check graphic</button>
 </div>
 <div class="box">
     <p> Digital marketing</p><br>
     <p>Check more,<span> here.</span></p>
+    <button onclick="window.location.href='#'">Check more</button>
 </div>
 
 </div>
@@ -187,8 +188,8 @@
 <p> Video and gpraphic projects</p>
 <p> Digital marketing</p>-->
 <!--footer-->
-<footer>
-    
+<footer class="footeredit">
+    <p>All the rights reserved 2023</p>
 </footer>
 
 

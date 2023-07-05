@@ -9,6 +9,7 @@
     margin-left: 0;
     margin-bottom: 0;
     padding: 0;
+    
    
    
 }
@@ -45,6 +46,14 @@ li{
     padding:  10px;
 }
 
+nav li a{ text-decoration: none;}
+
+
+a{ text-decoration: none;
+    color: #ffffff;
+    
+    
+}
 
 .min {
     width: 50%;
@@ -55,25 +64,41 @@ li{
 main{
     width: full;
     height:800px;
-    position: relative;
-    top: 50px;
-    background-color: black;
+    background-color: blue;
     background-image: url("img/mainbackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
  }
 
-/* .banner-text{
+ .my_avatarimg{
     position: relative;
-    top: 700px;
-    right:100px;
+    top: -250px;
+    left: -850px;
+    background-image: url("img/flip1.jpg");
+    width: 200px;
+    height: 200px;
+    margin: 0;
+
+ }
+
+ .banner-text{
+    position: relative;
+    
     color: black;
     text-align: center;
+    position: relative;
+    top: -230px;
+    left:-850px;
     
 
 
- }*/
+ }
 
 
 
@@ -108,6 +133,7 @@ margin:0;
 padding-left: 40px;
 background-color: black;
 border-radius: 5% 30% 5%;
+
  
 
 
@@ -374,3 +400,10 @@ background-color: black;
 }
 
 
+.footeredit{
+    width: 100%;
+    height: auto;
+    background-color: #101010;
+    color: #ffffff;
+    text-align: center;
+}
